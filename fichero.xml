@@ -10,12 +10,12 @@
         <postre dulce="no">Helado</postre>
         <postre dulce="no">Fruta</postre>
     </menu>
-    <menu dias="sabado-domingo" precio="18">
-        <plato1 tipo="frío">Escarola</plato1>
-        <plato1 tipo="caliente">Pisto</plato1>
-        <plato2 peso="200">Marisco</plato2>
-        <plato2 peso="220">Caza</plato2>
-        <postre dulce="si">Mouse</postre>
-        <postre dulce="no">Cuajada</postre>
+    <menu dias="kksabado-domingo" precio="18">
+        <plato1 tipo="kkcaliente">Garbanzos</plato1>
+        <plato1 tipo="kkcaliente">Lentejas</plato1>
+        <plato2 peso="280">kkPescado</plato2>
+        <postre dulce="si">kkFlan</postre>
+        <postre dulce="no">kkHelado</postre>
+        <postre dulce="no">kkFruta</postre>
     </menu>
 </restaurante>
