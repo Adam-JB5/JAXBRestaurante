@@ -9,6 +9,7 @@ import java.io.File;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.Unmarshaller;
 
 /**
  *
@@ -73,18 +74,30 @@ public class EjercicioJAXBRestaurante {
         restaurante.annadirMenu(menu2);
         
         
+//        try {
+//            System.out.println("Creando el objeto JAXBContext e iniciándolo con la clase de la que se va a hacer marshalling");
+//            JAXBContext jc = JAXBContext.newInstance(Restaurante.class);
+//            System.out.println("Creando el objeto Marshaller y configurándolo para que genere salida XML formateada");
+//            Marshaller m = jc.createMarshaller();
+//            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+//            System.out.println("Convirtiendo el objeto en un documento XML y almacenándolo en un fichero");
+//            File ficheroXML = new File(args[0]);
+//            m.marshal(restaurante, ficheroXML);
+//            System.out.println("Fichero XML generado");
+//        } catch (JAXBException ex) {
+//            System.out.println(ex);
+//        }
+        
+        File ficheroXML = new File(args[0]);
+
         try {
-            System.out.println("Creando el objeto JAXBContext e iniciándolo con la clase de la que se va a hacer marshalling");
             JAXBContext jc = JAXBContext.newInstance(Restaurante.class);
-            System.out.println("Creando el objeto Marshaller y configurándolo para que genere salida XML formateada");
-            Marshaller m = jc.createMarshaller();
-            m.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
-            System.out.println("Convirtiendo el objeto en un documento XML y almacenándolo en un fichero");
-            File ficheroXML = new File(args[0]);
-            m.marshal(restaurante, ficheroXML);
-            System.out.println("Fichero XML generado");
-        } catch (JAXBException ex) {
-            System.out.println(ex);
+            Unmarshaller um = jc.createUnmarshaller();
+            Restaurante restaurante2 = (Restaurante) um.unmarshal(ficheroXML);
+            System.out.println("Terminado correctamente");
+            System.out.println(restaurante2);
+        } catch (JAXBException e) {
+            System.out.println(e);
         }
     }
     

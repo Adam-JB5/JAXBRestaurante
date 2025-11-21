@@ -44,6 +44,12 @@ public class Plato2 {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
+    @Override
+    public String toString() {
+        return "Plato2{" + "peso=" + peso + ", nombre=" + nombre + '}';
+    }
+    
     
     
 }

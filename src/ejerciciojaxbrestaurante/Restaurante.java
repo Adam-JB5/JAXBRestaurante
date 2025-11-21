@@ -46,6 +46,13 @@ public class Restaurante {
     public void annadirMenu(Menu menu) {
         menus.add(menu);
     }
+
+    @Override
+    public String toString() {
+        return "Restaurante{" + "nombre=" + nombre + ", menus=" + menus + '}';
+    }
+    
+    
     
     
 }

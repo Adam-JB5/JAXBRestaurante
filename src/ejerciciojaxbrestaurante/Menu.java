@@ -64,6 +64,12 @@ public class Menu {
     public void annadirPlatosYPostres(Object platoOPostre) {
         platosYPostres.add(platoOPostre);
     }
+
+    @Override
+    public String toString() {
+        return "Menu{" + "dias=" + dias + ", precio=" + precio + ", platosYPostres=" + platosYPostres + '}';
+    }
+    
     
     
 }
