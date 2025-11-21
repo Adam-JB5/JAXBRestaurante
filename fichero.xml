@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restaurante nombre="Buen Llantar">
+    <menu dias="lunes-viernes" precio="12">
+        <plato1 tipo="caliente">Garbanzos</plato1>
+        <plato1 tipo="caliente">Lentejas</plato1>
+        <plato1 tipo="frío">Salmorejo</plato1>
+        <plato2 peso="180">Carne</plato2>
+        <plato2 peso="280">Pescado</plato2>
+        <postre dulce="si">Flan</postre>
+        <postre dulce="no">Helado</postre>
+        <postre dulce="no">Fruta</postre>
+    </menu>
+    <menu dias="sabado-domingo" precio="18">
+        <plato1 tipo="frío">Escarola</plato1>
+        <plato1 tipo="caliente">Pisto</plato1>
+        <plato2 peso="200">Marisco</plato2>
+        <plato2 peso="220">Caza</plato2>
+        <postre dulce="si">Mouse</postre>
+        <postre dulce="no">Cuajada</postre>
+    </menu>
+</restaurante>

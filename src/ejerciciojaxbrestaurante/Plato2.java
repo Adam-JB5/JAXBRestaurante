@@ -5,12 +5,45 @@
  */
 package ejerciciojaxbrestaurante;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlValue;
+
 /**
  *
  * @author DAM209
  */
+@XmlRootElement
 public class Plato2 {
     private int peso;
     private String nombre;
+    
+    public Plato2() {
+        
+    }
+    
+    public Plato2(int peso, String nombre) {
+        this.peso = peso;
+        this.nombre = nombre;
+    }
+
+    @XmlAttribute
+    public int getPeso() {
+        return peso;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
+
+    @XmlValue
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
     
 }
