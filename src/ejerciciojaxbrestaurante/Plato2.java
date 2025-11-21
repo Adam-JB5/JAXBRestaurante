@@ -10,5 +10,7 @@ package ejerciciojaxbrestaurante;
  * @author DAM209
  */
 public class Plato2 {
+    private int peso;
+    private String nombre;
     
 }
